@@ -2,8 +2,9 @@
   "name": "@nekoos/authz.js",
   "version": "0.1.0",
   "description": "Authorization library",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -11,5 +12,8 @@
     "gate"
   ],
   "author": "Neder Alfonso Fandiño Andrade",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
 }
