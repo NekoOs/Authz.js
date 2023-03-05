@@ -130,7 +130,7 @@ class Gate {
 
     raw(ability: string, ...args) {
         let result = this.#callBeforeCallbacks(this.#user, ability, args)
-            ?? this.#abilities?.[ability]?.(this.#user, ability, ...args);
+            ?? this.#abilities?.[ability]?.(this.#user, ...args);
 
         return this.#callAfterCallbacks(this.#user, ability, args, result);
     }
